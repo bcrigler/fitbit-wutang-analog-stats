@@ -5,7 +5,6 @@ import { HeartRateSensor } from "heart-rate";
 import { BodyPresenceSensor } from "body-presence";
 import { today } from 'user-activity';
 import { me } from "appbit";
-import { battery } from "power";
 import * as messaging from "messaging";
 import * as fs from "fs";
 
@@ -20,7 +19,6 @@ let minutehand = document.getElementById("minutehand");
 let secondhand = document.getElementById("secondhand");
 let outercenterdot = document.getElementById("outercenterdot");
 let innercenterdot = document.getElementById("innercenterdot");
-let hourhand24 = document.getElementById("hourhand24");
 let backgroundGradient = document.getElementById("backgroundGradient");
 let dayField = document.getElementById("dayField");
 let dateField = document.getElementById("dateField");
@@ -32,8 +30,6 @@ let dist = 0;
 let stepsField = document.getElementById("stepsField");
 let floorsField = document.getElementById("floorsField");
 let calsField = document.getElementById("calsField");
-let batteryMeter = document.getElementById("batteryMeter");
-let batteryPercent = document.getElementById("batteryPercent");
 
 let settings = loadSettings();
 function loadSettings() {
@@ -42,7 +38,7 @@ function loadSettings() {
   }
   catch (ex) {
     return {
-      accentcolor: "dodgerblue",
+      accentcolor: "#ffcd00",
       markercolor: "lightgrey",
       handsopacity: 1.0,
       showBackgroundGradient: true
@@ -127,15 +123,12 @@ clock.ontick = (evt) => {
   hourhand.groupTransform.rotate.angle = (30 * (evt.date.getHours() % 12)) + (0.5 * evt.date.getMinutes());
   minutehand.groupTransform.rotate.angle = (6 * evt.date.getMinutes()) + (0.1 * evt.date.getSeconds());
   secondhand.groupTransform.rotate.angle = (6 * evt.date.getSeconds());
-  hourhand24.groupTransform.rotate.angle = (15 * evt.date.getHours()) + (0.25 * evt.date.getMinutes());
   amField.text = today.adjusted.activeMinutes;
   stepsField.text = today.adjusted.steps;
   dist = (units.distance === "metric" ? today.adjusted.distance * 0.001 : today.adjusted.distance * 0.000621371);
   distField.text = Math.floor(dist * 100) / 100;
   floorsField.text = today.adjusted.elevationGain;
   calsField.text = today.adjusted.calories;
-  batteryMeter.sweepAngle = 3.6 * battery.chargeLevel;
-  batteryPercent.text = `${battery.chargeLevel}%`
 };
 
 setColours(settings.accentcolor, settings.markercolor);
