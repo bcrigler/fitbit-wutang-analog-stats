@@ -1,0 +1,67 @@
+<svg id="clock">
+  <image href="logo_300_300.png" />
+  <defs>
+    <symbol id="complication">
+      <circle cx="52" cy="52" r="52" fill="black" opacity="0.1"/>
+      <arc x="0" y="0" width="104" height="104" arc-width="3" start-angle="0" sweep-angle="360" opacity="0"/>
+    </symbol>
+  </defs>
+
+  <section x="0" y="0" width="100%" height="100%">
+    <gradientRect id="backgroundGradient" x="0" y="0" width="100%" height="100%" opacity="0.5"
+      gradient-type="radial"
+      gradient-x1="50%" gradient-y1="50%"
+      gradient-x2="100%" gradient-y2="100%"
+      gradient-color2="#000000"/>
+    
+    <!-- Top sub-dial - Date and Time -->
+    <section x="9%+12" y="30%+4" width="104" height="104">
+      <use href="#complication">
+        <text id="dayField" x="50%" y="29%" class="daymonthtext markercolour"/>
+        <text id="dateField" x="51%" y="65%" class="datetext markercolour"/>
+        <text id="monthField" x="51%" y="88%" class="daymonthtext markercolour"/>
+      </use>
+    </section>
+
+    <!-- Bottom Right sub-dial - Health Stats -->
+    <section x="55%+16" y="30%+4" width="104" height="104">
+      <use href="#complication">
+        <use id="stats-cycle" href="#cycleview">
+          <use href="#cycleview-item">
+            <image id="hrIcon" href="stat_hr_open_48px.png" class="statsicon markercolour"/>
+            <text id="hrField" class="statsfield markercolour" text-length="8"/>
+          </use>
+          <use href="#cycleview-item">
+            <image href="stat_am_open_48px.png" class="statsicon markercolour"/>
+            <text id="amField" class="statsfield markercolour" text-length="8"/>
+          </use>
+          <use href="#cycleview-item">
+            <image href="stat_steps_open_48px.png" class="statsicon markercolour"/>
+            <text id="stepsField" class="statsfield markercolour" text-length="8"/>
+          </use>
+          <use href="#cycleview-item">
+            <image href="stat_dist_open_48px.png" class="statsicon markercolour"/>
+            <text id="distField" class="statsfield markercolour" text-length="8"/>
+          </use>
+          <use href="#cycleview-item">
+            <image href="stat_floors_open_48px.png" class="statsicon markercolour"/>
+            <text id="floorsField" class="statsfield markercolour" text-length="8"/>
+          </use>
+          <use href="#cycleview-item">
+            <image href="stat_cals_open_48px.png" class="statsicon markercolour"/>
+            <text id="calsField" class="statsfield markercolour" text-length="8"/>            
+          </use>
+        </use>
+      </use>
+    </section>
+
+    <!-- Clock Face -->
+    <g transform="translate(50%,50%)">
+      <g id="hourhand"><line x1="0" y1="4%" x2="0" y2="-30%" stroke-width="5" class="markercolour"/></g>
+      <g id="minutehand"><line x1="0" y1="4%" x2="0" y2="-39%" stroke-width="5" class="markercolour"/></g>
+      <g id="secondhand"><line x1="0" y1="4%" x2="0" y2="-39%" stroke-width="3" class="accentcolour"/></g>
+      <circle id="outercenterdot" cx="0" cy="0" r="6" class="accentcolour"/>
+      <circle id="innercenterdot" cx="0" cy="0" r="3" class="markercolour"/>
+    </g>
+  </section>
+</svg>

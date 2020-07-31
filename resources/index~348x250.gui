@@ -1,5 +1,5 @@
 <svg id="clock">
-  <image href="logo_300_300.png" />
+  <image href="logo_348_250.png" />
   <defs>
     <symbol id="complication">
       <circle cx="52" cy="52" r="52" fill="black" opacity="0.1"/>
@@ -13,11 +13,9 @@
       gradient-x1="50%" gradient-y1="50%"
       gradient-x2="100%" gradient-y2="100%"
       gradient-color2="#000000"/>
-
-    <!-- <arc id="bezelring" x="0%" y="0%" width="100%" height="100%" arc-width="5" opacity="0.75" class="accentcolour"/> -->
     
     <!-- Top sub-dial - Date and Time -->
-    <section x="9%+12" y="30%+4" width="104" height="104">
+    <section x="13%+12" y="30%+4" width="104" height="104">
       <use href="#complication">
         <text id="dayField" x="50%" y="29%" class="daymonthtext markercolour"/>
         <text id="dateField" x="51%" y="65%" class="datetext markercolour"/>
@@ -26,7 +24,7 @@
     </section>
 
     <!-- Bottom Right sub-dial - Health Stats -->
-    <section x="55%+16" y="30%+4" width="104" height="104">
+    <section x="51%+16" y="30%+4" width="104" height="104">
       <use href="#complication">
         <use id="stats-cycle" href="#cycleview">
           <use href="#cycleview-item">
@@ -56,28 +54,6 @@
         </use>
       </use>
     </section>
-
-    <!-- Bottom Left sub-dial - Other metrics - 24 Hour hand / Battery level -->
-    <!-- <section x="50%-112" y="50%-18" width="104" height="104">
-      <use href="#complication">
-        <use id="info-cycle" href="#cycleview">
-          <use href="#cycleview-item">
-            <g id="hourhand24" transform="translate(50%,50%)">
-              <line x1="0" y1="0" x2="0" y2="-25%" stroke-width="2" class="markercolour"/>
-            </g>
-            <g transform="translate(50%,50%)">
-              <use href="#hourmarker24"/>
-              <circle cx="0" cy="0" r="4" opacity="0.7" class="accentcolour"/>
-              <circle cx="0" cy="0" r="2" class="markercolour"/>
-            </g>
-          </use>
-          <use href="#cycleview-item">
-            <arc id="batteryMeter" class="accentcolour" x="3" y="3" width="98" height="98" arc-width="7" start-angle="0" opacity="0.35"/>
-            <text id="batteryPercent" class="statsfield markercolour" text-length="4"/>
-          </use>
-        </use>
-      </use>
-    </section> -->
 
     <!-- Clock Face -->
     <g transform="translate(50%,50%)">
