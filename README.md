@@ -12,3 +12,9 @@ Customize your experience with custom color schemes utilizing the companion app!
 ![Alt text](/wutang-analog-stats-screenshot-2.png?raw=true "Fitbit Ionic Screenshot")
 
 ![Alt text](/wutang-analog-stats-screenshot-3.png?raw=true "Fitbit Ionic Screenshot")
+
+![Alt text](/wutang-analog-stats-screenshot-versa.png?raw=true "Fitbit Versa Screenshot")
+
+![Alt text](/wutang-analog-stats-screenshot-versa-lite.png?raw=true "Fitbit Versa Lite Screenshot")
+
+![Alt text](/wutang-analog-stats-screenshot-versa-2.png?raw=true "Fitbit Versa 2 Screenshot")
