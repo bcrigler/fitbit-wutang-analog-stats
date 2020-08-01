@@ -7,14 +7,26 @@ Works on all models of Fitbit!!
 
 Customize your experience with custom color schemes utilizing the companion app!
 
-![Alt text](/wutang-analog-stats-screenshot.png?raw=true "Fitbit Ionic Screenshot")
+Ionic Color Scheme Example 1
 
-![Alt text](/wutang-analog-stats-screenshot-2.png?raw=true "Fitbit Ionic Screenshot")
+![Ionic Color Scheme Example 1](/wutang-analog-stats-screenshot.png?raw=true "Fitbit Ionic Screenshot")
 
-![Alt text](/wutang-analog-stats-screenshot-3.png?raw=true "Fitbit Ionic Screenshot")
+Ionic Color Scheme Example 2
 
-![Alt text](/wutang-analog-stats-screenshot-versa.png?raw=true "Fitbit Versa Screenshot")
+![Ionic Color Scheme Example 2](/wutang-analog-stats-screenshot-2.png?raw=true "Fitbit Ionic Screenshot")
 
-![Alt text](/wutang-analog-stats-screenshot-versa-lite.png?raw=true "Fitbit Versa Lite Screenshot")
+Ionic Color Scheme Example 3
 
-![Alt text](/wutang-analog-stats-screenshot-versa-2.png?raw=true "Fitbit Versa 2 Screenshot")
+![Ionic Color Scheme Example 3](/wutang-analog-stats-screenshot-3.png?raw=true "Fitbit Ionic Screenshot")
+
+Versa Screen
+
+![Versa Screen](/wutang-analog-stats-screenshot-versa.png?raw=true "Fitbit Versa Screenshot")
+
+Versa Lite Screen
+
+![Versa Lite Screen](/wutang-analog-stats-screenshot-versa-lite.png?raw=true "Fitbit Versa Lite Screenshot")
+
+Versa 2 Screen
+
+![Versa 2 Screen](/wutang-analog-stats-screenshot-versa-2.png?raw=true "Fitbit Versa 2 Screenshot")
