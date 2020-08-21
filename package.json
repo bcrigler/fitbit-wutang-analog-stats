@@ -1,8 +1,8 @@
 {
   "fitbit": {
-    "appUUID": "b90ca310-7b75-47c3-9b38-d6aa2d5f188e",
+    "appUUID": "aca755f1-12d0-4218-88b0-7125924947e5",
     "appType": "clockface",
-    "appDisplayName": "wutang-analog-stats",
+    "appDisplayName": "Wu Tang Analog Stats",
     "iconFile": "resources/icon.png",
     "wipeColor": "",
     "requestedPermissions": [
@@ -11,13 +11,12 @@
     ],
     "buildTargets": [
       "meson",
-      "gemini",
       "mira",
       "higgs"
     ],
     "i18n": {
       "en": {
-        "name": "wutang-analog-stats"
+        "name": "Wu Tang Analog Stats"
       }
     },
     "defaultLanguage": "en-US"
